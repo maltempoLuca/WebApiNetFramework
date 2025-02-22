@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="buildspec.yml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

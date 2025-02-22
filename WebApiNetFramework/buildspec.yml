@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Restoring NuGet packages...
+      - nuget restore WebApiNetFramework.sln
+  build:
+    commands:
+      - echo Building the solution...
+      - msbuild WebApiNetFramework.sln /p:Configuration=Release
+artifacts:
+  files:
+    - '**/*'
