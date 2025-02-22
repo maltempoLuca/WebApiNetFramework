@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.3
 
 phases:
   install:
@@ -10,5 +10,8 @@ phases:
       - echo Building the solution...
       - msbuild WebApiNetFramework.sln /p:Configuration=Release
 artifacts:
+  base-directory: WebApiNetFramework/obj/Release
   files:
     - '**/*'
+  discard-paths: yes
+
