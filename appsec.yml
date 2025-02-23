@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\inetpub\wwwroot\MyDotNetApp
+hooks:
+  ApplicationStart:
+    - location: scripts\start_app.bat
+      timeout: 300
