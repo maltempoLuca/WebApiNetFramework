@@ -14,6 +14,5 @@ artifacts:
   files:
     - '**/*'
   discard-paths: yes
-  region: eu-central-1
 
 
